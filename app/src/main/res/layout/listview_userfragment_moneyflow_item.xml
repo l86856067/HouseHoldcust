@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/shape_homelist_item_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.MainActivity">
+
+    <!-- 左边的头像 -->
+    <ImageView
+        android:id="@+id/flowlist_item_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_head"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- 订单的名字 -->
+    <TextView
+        android:id="@+id/flowlist_item_textName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/flowlist_item_head"
+        android:gravity="center"
+        android:textColor="@color/app_textblack"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+
+    <!-- 右边的箭头 -->
+    <ImageView
+        android:id="@+id/flowlist_item_details"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <!-- 金额的textview -->
+    <TextView
+        android:id="@+id/flowlist_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/app_texthui"
+        android:layout_toLeftOf="@id/flowlist_item_details"
+        android:layout_marginRight="20dp"/>
+
+    <!-- 订单日期前面的小图标 -->
+    <ImageView
+        android:id="@+id/flowlist_item_dateImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="2dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/icon_date"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/flowlist_item_head"
+        android:layout_below="@id/flowlist_item_textName"/>
+
+    <!-- 订单日期 -->
+    <TextView
+        android:id="@+id/flowlist_item_textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/app_texthui"
+        android:layout_toRightOf="@id/flowlist_item_dateImage"
+        android:layout_below="@id/flowlist_item_textName"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

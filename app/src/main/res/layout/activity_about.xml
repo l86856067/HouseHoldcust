@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="android.app.wolf.household.view.activity.AboutActivity">
+
+
+    <!-- 上边放置toolbar的布局 -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:layout_height="60dp"
+        android:background="@color/app_theme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="关于我们"
+                android:textColor="@color/app_white"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/about_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_of_left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_toolbar"
+        android:padding="10dp"
+        android:lineSpacingExtra="7dp"
+        android:textSize="15sp"
+        android:text="家菲猫家政是一款实用性信息平台，家菲猫家政致力于打造家政行业安全、负责、健康，坚持给每一位用户营造舒适高雅的生活环境，专业的阿姨队伍。并具有服务供求，管理营销，大数据支撑，智能化管理等服务体系，家菲猫为所有用户提供高品质家政服务"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家菲猫    版权所有"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'@'2017上海有添信息科技有限公司"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="《上海家菲猫家政用户协议》"
+        android:textSize="14sp"
+        android:textColor="@color/app_theme"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"/>
+
+</RelativeLayout>

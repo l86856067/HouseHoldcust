@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_home_notice_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:text="通知"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="我知道了"
+        android:gravity="center"
+        android:layout_below="@id/dialog_message"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_theme"
+        android:layout_above="@id/dialog_btn">
+
+    </View>
+
+</RelativeLayout>

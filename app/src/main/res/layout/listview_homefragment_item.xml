@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/shape_homelist_item_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/homelist_item_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_head"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/homelist_item_serviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@id/homelist_item_head"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/app_textblack"/>
+
+    <ImageView
+        android:id="@+id/homelist_item_locaimage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/icon_location"
+        android:layout_toRightOf="@id/homelist_item_head"
+        android:layout_below="@id/homelist_item_serviceName"/>
+
+    <TextView
+        android:id="@+id/homelist_item_textBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="待接单>"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/app_white"
+        android:background="@drawable/shape_homelist_itembutton_background"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/homelist_item_customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/homelist_item_serviceName"
+        android:layout_toLeftOf="@id/homelist_item_textBtn"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/app_texthui"/>
+    <TextView
+        android:id="@+id/homelist_item_textAddre"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/homelist_item_locaimage"
+        android:layout_toLeftOf="@id/homelist_item_customerName"
+        android:layout_below="@id/homelist_item_serviceName"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/app_texthui"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</RelativeLayout>

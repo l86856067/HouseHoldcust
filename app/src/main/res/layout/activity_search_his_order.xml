@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="android.app.wolf.household.view.activity.SearchHisOrderActivity">
+
+    <!-- 上边放置toolbar的布局 -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/searchhis_toolbar"
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:layout_height="60dp"
+        android:background="@color/app_theme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="订单搜索"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/searchhis_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_of_left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    
+    <LinearLayout
+        android:id="@+id/searchhis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@color/app_white">
+        <TextView
+            android:id="@+id/searchhis_startBtn"
+            android:layout_width="3dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="开始日期"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_history_searchbutton_background"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/searchhis_endBtn"
+            android:layout_width="3dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="结束日期"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_history_searchbutton_background"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/searchhis_search"
+            android:layout_width="3dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="搜索"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_history_searchbutton_background"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_texthui"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/searchhis_refer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/searchhis_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
